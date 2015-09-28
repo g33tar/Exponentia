@@ -1,0 +1,16 @@
+<div ng-controller="HttpController">
+  <header>
+    <h1>Exponentia</h1>
+    <h3>Spell check medical terminology. <i class="fa fa-hand-pointer-o"></i> Click on term to copy for easy use in other applications.</h3>
+  </header>
+
+  <form>
+    <label for="">Search</label>
+    <input class="input" ng-model="term" type="text">
+    <input class="submit" ng-click="addQuery()" type="submit" value="submit">
+  </form>
+
+  <div class="terms" id="terms">
+    <jqcloud words="terms" width="1200" height="600" steps="7"></jqcloud>
+  </div>
+</div>
